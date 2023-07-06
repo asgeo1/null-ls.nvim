@@ -59,7 +59,7 @@ return h.make_builtin({
     method = DIAGNOSTICS,
     filetypes = { "ruby" },
     generator_opts = {
-        command = "rubocop",
+        command = "bundle exec rubocop",
         args = { "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" },
         to_stdin = true,
         format = "json",

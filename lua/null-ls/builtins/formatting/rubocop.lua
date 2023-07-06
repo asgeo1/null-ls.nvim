@@ -12,7 +12,7 @@ return h.make_builtin({
     method = FORMATTING,
     filetypes = { "ruby" },
     generator_opts = {
-        command = "rubocop",
+        command = "bundle exec rubocop",
         args = {
             -- NOTE: For backwards compatibility,
             -- we are still using "-a" shorthand' for both "--auto-correct" (pre-1.3.0) and "--autocorrect" (1.3.0+).
